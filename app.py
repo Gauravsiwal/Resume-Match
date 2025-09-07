@@ -11,9 +11,9 @@ model = genai.GenerativeModel("gemini-2.0-flash-lite")
 
 st.header('SKILL MATCHER :blue[AI assisted skill matching tool]',divider='green')
 st.subheader('Tips to use the tool')
-tips = '''* Upload your resume in sidebar (PDF only)
-* Copy and paste Job Description for job you are applying for
-* Click the submit button and see the magic'''
+tips = '''* Upload your resume in sidebar (PDF only).
+* Copy and paste Job Description for job you are applying for.
+* Submit your data and see the magic.'''
 
 st.write(tips)
 
