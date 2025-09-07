@@ -41,13 +41,13 @@ output on the following otline
 being maximised while implementing all the points discussed above.
 * Prepare these resume in such a way that it can be copied and pasted in word and generate pdf.'''
 
-if job_desc and pdf_text:
+if job_desc:
+    if pdf_doc == None:
+        st.write('You have forgot to upload resume')
     with st.spinner("⚙️ Processing your resume and job description..."):
         response = model.generate_content(prompt)
     st.success('Processing Completed')
     st.write(response.text)
-else:
-    st.write('Need Job description and Resume Both')
 
 
 
